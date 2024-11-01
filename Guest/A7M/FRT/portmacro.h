@@ -46,7 +46,7 @@ typedef uint32_t                                TickType_t;
 
 //#define portYIELD()                             RVM_Virt_Yield()
 RVM_EXTERN void _FreeRTOS_A7M_RVM_Yield(void);
-#define portYIELD()                             _FreeRTOS_A7M_RVM_Yield()
+#define portYIELD()                             RVM_Virt_Yield()
 #define portEND_SWITCHING_ISR(xSwitchRequired) \
 do \
 { \
